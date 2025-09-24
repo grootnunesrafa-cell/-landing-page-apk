@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppName - Transforme Sua Vida Digital</title>
+    
+    <!-- Meta tags para SEO e redes sociais -->
+    <meta name="description" content="Descubra o app que vai revolucionar sua produtividade. Download seguro e resultados garantidos!">
+    <meta property="og:title" content="AppName - O App Que Você Estava Esperando">
+    <meta property="og:description" content="Mais de 50.000 usuários já transformaram suas vidas. Seja o próximo!">
+    
+    <!-- CSS Framework Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS para animações -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- SEÇÃO HERO - Primeira impressão crucial -->
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <!-- Headline irresistível baseada em gatilhos mentais -->
+                        <h1 class="hero-title">
+                            Descubra o <span class="text-gradient">App Secreto</span> que 
+                            <span class="highlight">50.000+ Pessoas</span> Usam Para 
+                            <span class="text-gradient">Triplicar Sua Produtividade</span>
+                        </h1>
+                        
+                        <!-- Subheadline com benefício claro -->
+                        <p class="hero-subtitle">
+                            Em apenas 7 dias, você vai economizar 3 horas diárias e 
+                            aumentar seus resultados em 300%. Garantido ou seu dinheiro de volta!
+                        </p>
+                        
+                        <!-- Prova social imediata -->
+                        <div class="social-proof mb-4">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-text">4.9/5 (2.847 avaliações)</span>
+                            </div>
+                            <p class="users-count">
+                                <i class="fas fa-users"></i>
+                                Mais de 50.000 usuários ativos
+                            </p>
+                        </div>
+                        
+                        <!-- CTA principal com urgência -->
+                        <div class="cta-container">
+                            <button class="btn btn-primary btn-cta pulse" onclick="scrollToOffer()">
+                                <i class="fas fa-download"></i>
+                                QUERO MEU APP AGORA
+                                <span class="btn-subtitle">Por apenas R\$ 29,90</span>
+                            </button>
+                            
+                            <!-- Elementos de urgência -->
+                            <div class="urgency-timer">
+                                <i class="fas fa-clock"></i>
+                                <span>Oferta termina em: </span>
+                                <span id="countdown" class="countdown-timer">23:59:45</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Garantias e segurança -->
+                        <div class="guarantees">
+                            <div class="guarantee-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>100% Seguro</span>
+                            </div>
+                            <div class="guarantee-item">
+                                <i class="fas fa-undo"></i>
+                                <span>30 Dias de Garantia</span>
+                            </div>
+                            <div class="guarantee-item">
+                                <i class="fas fa-lock"></i>
+                                <span>Pagamento Protegido</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image">
+                        <!-- Mockup do celular com o app -->
+                        <div class="phone-mockup">
+                            <img src="https://via.placeholder.com/300x600/4f46e5/ffffff?text=SEU+APP" alt="App Preview" class="app-preview">
+                            <!-- Elementos flutuantes para chamar atenção -->
+                            <div class="floating-element element-1">
+                                <i class="fas fa-chart-line"></i>
+                                <span>+300% Produtividade</span>
+                            </div>
+                            <div class="floating-element element-2">
+                                <i class="fas fa-clock"></i>
+                                <span>3h Economizadas/Dia</span>
+                            </div>
+                            <div class="floating-element element-3">
+                                <i class="fas fa-trophy"></i>
+                                <span>#1 em Resultados</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Indicador de scroll -->
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE PROBLEMAS - Identificação com dores -->
+    <section class="problems-section py-5" id="problems">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">
+                        Você Está <span class="text-danger">Perdendo Tempo</span> e 
+                        <span class="text-danger">Dinheiro</span> Todos os Dias?
+                    </h2>
+                    <p class="section-subtitle">
+                        Se você se identifica com pelo menos 2 desses problemas, 
+                        este app foi feito especialmente para você:
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Problema 1 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="problem-card">
+                        <div class="problem-icon">
+                            <i class="fas fa-clock text-danger"></i>
+                        </div>
+                        <h4>Falta de Tempo</h4>
+                        <p>Você trabalha 12 horas por dia mas sente que não consegue fazer nem metade do que precisa?</p>
+                        <div class="problem-stat">
+                            <span class="stat-number">87%</span>
+                            <span class="stat-text">das pessoas sofrem com isso</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Problema 2 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="problem-card">
+                        <div class="problem-icon">
+                            <i class="fas fa-brain text-danger"></i>
+                        </div>
+                        <h4>Sobrecarga Mental</h4>
+                        <p>Sua mente está sempre acelerada, cheia de tarefas e você não consegue se organizar?</p>
+                        <div class="problem-stat">
+                            <span class="stat-number">92%</span>
+                            <span class="stat-text">relatam estresse constante</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Problema 3 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="problem-card">
+                        <div class="problem-icon">
+                            <i class="fas fa-chart-line-down text-danger"></i>
+                        </div>
+                        <h4>Baixa Produtividade</h4>
+                        <p>Você sabe que poderia render muito mais, mas não consegue encontrar o método certo?</p>
+                        <div class="problem-stat">
+                            <span class="stat-number">78%</span>
+                            <span class="stat-text">não atingem suas metas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Agitação emocional -->
+            <div class="row mt-5">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <div class="emotional-trigger">
+                        <h3 class="text-danger mb-3">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            PARE DE DESPERDIÇAR SUA VIDA!
+                        </h3>
+                        <p class="lead">
+                            Cada dia que passa sem uma solução é um dia a menos para alcançar seus sonhos. 
+                            <strong>Você merece mais que isso!</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOLUÇÃO - Apresentação do produto -->
+    <section class="solution-section py-5" id="solution">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="solution-content">
+                        <h2 class="section-title">
+                            Apresentamos o <span class="text-gradient">AppName</span>
+                            <br>A Solução Definitiva Para Sua Produtividade
+                        </h2>
+                        
+                        <p class="lead">
+                            Desenvolvido por especialistas em neurociência e produtividade, 
+                            o AppName usa técnicas comprovadas cientificamente para 
+                            <strong>reprogramar seu cérebro para o sucesso</strong>.
+                        </p>
+                        
+                        <!-- Benefícios principais -->
+                        <div class="benefits-list">
+                            <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h5>Aumento de 300% na Produtividade</h5>
+                                    <p>Sistema baseado na Técnica Pomodoro 3.0 + IA personalizada</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h5>Redução de 80% do Estresse</h5>
+                                    <p>Algoritmo de priorização inteligente que organiza sua mente</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h5>3 Horas Extras Por Dia</h5>
+                                    <p>Automação inteligente de tarefas repetitivas</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- CTA secundário -->
+                        <button class="btn btn-outline-primary btn-lg mt-4" onclick="scrollToOffer()">
+                            <i class="fas fa-play"></i>
+                            Ver Demonstração
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="solution-video">
+                        <!-- Placeholder para vídeo demonstrativo -->
+                        <div class="video-placeholder">
+                            <div class="play-button" onclick="playDemo()">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <img src="https://via.placeholder.com/600x400/4f46e5/ffffff?text=DEMO+VIDEO" alt="Demonstração do App">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DEPOIMENTOS - Prova social -->
+    <section class="testimonials-section py-5" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">
+                        O Que Nossos <span class="text-gradient">50.000+ Usuários</span> 
+                        Estão Dizendo
+                    </h2>
+                    <p class="section-subtitle">
+                        Resultados reais de pessoas reais que transformaram suas vidas
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Depoimento 1 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Em 15 dias usando o AppName, consegui dobrar minha produtividade 
+                            e finalmente ter tempo para minha família. Mudou minha vida!"
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/60x60/28a745/ffffff?text=M" alt="Maria Silva">
+                            <div class="author-info">
+                                <h6>Maria Silva</h6>
+                                <span>Empresária - São Paulo</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-result">
+                            <span class="result-badge">+200% Produtividade</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Depoimento 2 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Estava no limite do burnout. O AppName me ensinou a trabalhar 
+                            de forma inteligente. Hoje trabalho 6h e produzo mais que antes!"
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/60x60/007bff/ffffff?text=J" alt="João Santos">
+                            <div class="author-info">
+                                <h6>João Santos</h6>
+                                <span>Desenvolvedor - Rio de Janeiro</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-result">
+                            <span class="result-badge">-50% Horas Trabalhadas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Depoimento 3 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Minha renda aumentou 150% em 3 meses. O AppName me deu o foco 
+                            e organização que eu precisava para crescer profissionalmente."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/60x60/dc3545/ffffff?text=A" alt="Ana Costa">
+                            <div class="author-info">
+                                <h6>Ana Costa</h6>
+                                <span>Consultora - Belo Horizonte</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-result">
+                            <span class="result-badge">+150% Renda</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Estatísticas impressionantes -->
+            <div class="row mt-5">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <div class="stat-number">50,000+</div>
+                            <div class="stat-label">Usuários Ativos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">4.9/5</div>
+                            <div class="stat-label">Avaliação Média</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Taxa de Satisfação</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">300%</div>
+                            <div class="stat-label">Aumento Médio de Produtividade</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO OFERTA - Momento da compra -->
+    <section class="offer-section py-5" id="offer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="offer-card" data-aos="zoom-in">
+                        <!-- Urgência no topo -->
+                        <div class="urgency-header">
+                            <i class="fas fa-fire"></i>
+                            <span>OFERTA LIMITADA - APENAS HOJE!</span>
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        
+                        <div class="offer-content">
+                            <h2 class="offer-title">
+                                Transforme Sua Vida Agora!
+                                <br><span class="text-gradient">Acesso Completo ao AppName</span>
+                            </h2>
+                            
+                            <!-- Comparação de preços -->
+                            <div class="price-comparison">
+                                <div class="old-price">
+                                    <span class="price-label">Preço Normal:</span>
+                                    <span class="price-value">R\$ 197,00</span>
+                                </div>
+                                <div class="current-price">
+                                    <span class="price-label">Hoje Apenas:</span>
+                                    <span class="price-value">R\$ 29,90</span>
+                                    <span class="discount-badge">85% OFF</span>
+                                </div>
+                            </div>
+                            
+                            <!-- O que está incluído -->
+                            <div class="included-items">
+                                <h4>🎁 Você Recebe TUDO Isso:</h4>
+                                <div class="items-list">
+                                    <div class="item">
+                                        <i class="fas fa-check"></i>
+                                        <span>App Completo com todas as funcionalidades</span>
+                                        <strong>R\$ 97,00</strong>
+                                    </div>
+                                    <div class="item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Guia Completo de Produtividade (PDF)</span>
+                                        <strong>R\$ 47,00</strong>
+                                    </div>
+                                    <div class="item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Templates Prontos para Organização</span>
+                                        <strong>R\$ 27,00</strong>
+                                    </div>
+                                    <div class="item">
+                                        <i class="fas fa-check"></i>
+                                        <span>Suporte VIP por 30 dias</span>
+                                        <strong>R\$ 97,00</strong>
+                                    </div>
+                                    <div class="item bonus">
+                                        <i class="fas fa-gift"></i>
+                                        <span><strong>BÔNUS:</strong> Curso "Mindset de Alta Performance"</span>
+                                        <strong>R\$ 197,00</strong>
+                                    </div>
+                                </div>
+                                
+                                <div class="total-value">
+                                    <span class="total-label">Valor Total:</span>
+                                    <span class="total-price">R\$ 465,00</span>
+                                </div>
+                            </div>
+                            
+                            <!-- CTA principal -->
+                            <div class="cta-main">
+                                <button class="btn btn-success btn-cta-main pulse" onclick="processPayment()">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    SIM! QUERO TRANSFORMAR MINHA VIDA
+                                    <span class="btn-subtitle">Pagamento 100% Seguro - R\$ 29,90</span>
+                                </button>
+                                
+                                <!-- Contador regressivo -->
+                                <div class="countdown-container">
+                                    <p>⏰ Esta oferta expira em:</p>
+                                    <div id="countdown-main" class="countdown-display">
+                                        <div class="time-unit">
+                                            <span class="time-number" id="hours">23</span>
+                                            <span class="time-label">Horas</span>
+                                        </div>
+                                        <div class="time-unit">
+                                            <span class="time-number" id="minutes">59</span>
+                                            <span class="time-label">Minutos</span>
+                                        </div>
+                                        <div class="time-unit">
+                                            <span class="time-number" id="seconds">45</span>
+                                            <span class="time-label">Segundos</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Garantias -->
+                            <div class="guarantees-section">
+                                <h4>🛡️ Suas Garantias:</h4>
+                                <div class="guarantee-grid">
+                                    <div class="guarantee-item">
+                                        <i class="fas fa-undo"></i>
+                                        <div>
+                                            <strong>30 Dias de Garantia</strong>
+                                            <p>Não gostou? Devolvemos 100% do seu dinheiro</p>
+                                        </div>
+                                    </div>
+                                    <div class="guarantee-item">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <div>
+                                            <strong>Pagamento Seguro</strong>
+                                            <p>Seus dados protegidos com criptografia SSL</p>
+                                        </div>
+                                    </div>
+                                    <div class="guarantee-item">
+                                        <i class="fas fa-headset"></i>
+                                        <div>
+                                            <strong>Suporte VIP</strong>
+                                            <p>Atendimento prioritário por 30 dias</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Métodos de pagamento -->
+                            <div class="payment-methods">
+                                <p>Formas de Pagamento:</p>
+                                <div class="payment-icons">
+                                    <i class="fab fa-cc-visa"></i>
+                                    <i class="fab fa-cc-mastercard"></i>
+                                    <i class="fab fa-cc-paypal"></i>
+                                    <i class="fas fa-barcode"></i>
+                                    <i class="fab fa-pix"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO FAQ - Objeções -->
+    <section class="faq-section py-5" id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">
+                        Perguntas <span class="text-gradient">Frequentes</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Tire todas suas dúvidas antes de transformar sua vida
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    🤔 O app realmente funciona para qualquer pessoa?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <strong>Sim, absolutamente!</strong> O AppName foi desenvolvido com base em princípios universais de neurociência e produtividade. Nossos algoritmos se adaptam ao seu perfil específico, funcionando para estudantes, empresários, freelancers e qualquer pessoa que queira ser mais produtiva. Temos usuários de 18 a 65 anos com resultados comprovados.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    💰 E se eu não ficar satisfeito com os resultados?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Oferecemos <strong>30 dias de garantia incondicional</strong>. Se por qualquer motivo você não estiver 100% satisfeito, basta enviar um email e devolvemos todo seu dinheiro, sem perguntas. Assumimos todo o risco para que você possa testar sem medo.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    📱 O app funciona no meu celular?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    O AppName é compatível com <strong>Android 6.0+</strong> e <strong>iOS 12.0+</strong>. Funciona perfeitamente em smartphones e tablets. Após a compra, você recebe o link de download imediato e instruções de instalação passo a passo.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    ⏰ Quanto tempo leva para ver resultados?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <strong>Os primeiros resultados aparecem em 24-48 horas!</strong> Você vai notar imediatamente uma melhora na organização mental. Em 7 dias, a maioria dos usuários já reporta aumento significativo de produtividade. Em 30 dias, a transformação é completa e duradoura.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    🔒 Meus dados ficam seguros?
+                                </button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <strong>Segurança é nossa prioridade máxima.</strong> Utilizamos criptografia de nível bancário (SSL 256-bit) e não compartilhamos seus dados com terceiros. Todos os pagamentos são processados por gateways certificados (PayPal, Stripe). Seus dados pessoais ficam 100% protegidos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO FINAL CTA - Última chance -->
+    <section class="final-cta-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center" data-aos="zoom-in">
+                    <div class="final-cta-content">
+                        <h2 class="final-cta-title">
+                            ⚡ ÚLTIMA CHANCE! ⚡
+                            <br>Não Deixe Sua Vida Passar em Branco
+                        </h2>
+                        
+                        <p class="final-cta-text">
+                            Você tem duas opções agora:
+                            <br><br>
+                            <strong>OPÇÃO 1:</strong> Continuar como está, perdendo tempo, dinheiro e oportunidades todos os dias...
+                            <br><br>
+                            <strong>OPÇÃO 2:</strong> Investir R\$ 29,90 (menos que um almoço) e transformar completamente sua produtividade e qualidade de vida.
+                            <br><br>
+                            <span class="highlight">A escolha é sua. Mas lembre-se: esta oferta expira em algumas horas e pode nunca mais voltar.</span>
+                        </p>
+                        
+                        <div class="final-countdown mb-4">
+                            <p class="countdown-text">⏰ Oferta expira em:</p>
+                            <div id="final-countdown" class="countdown-final">
+                                <span id="final-hours">23</span>h
+                                <span id="final-minutes">59</span>m
+                                <span id="final-seconds">45</span>s
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-danger btn-final-cta mega-pulse" onclick="processPayment()">
+                            <i class="fas fa-rocket"></i>
+                            SIM! QUERO MUDAR MINHA VIDA AGORA
+                            <span class="btn-subtitle">Acesso Imediato - Apenas R\$ 29,90</span>
+                        </button>
+                        
+                        <div class="final-guarantee mt-4">
+                            <p>
+                                <i class="fas fa-shield-alt"></i>
+                                <strong>Garantia de 30 dias ou seu dinheiro de volta!</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 AppName. Todos os direitos reservados.</p>
+                    <div class="footer-links">
+                        <a href="#privacy">Política de Privacidade</a>
+                        <a href="#terms">Termos de Uso</a>
+                        <a href="#contact">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
